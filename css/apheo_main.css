@@ -1874,7 +1874,6 @@ td.cross {
 	line-height:17px;
 	display:block;
 	background:#009edc;
-	text-align:center;
 	cursor:pointer;
 	width:auto;
 	border:1px solid #21abe1;
@@ -1883,6 +1882,7 @@ td.cross {
 	box-shadow:inset 0 -3px 0 0 #0086bb;
 	font-weight:normal !important
 }
+
 [class*="btn"]:active,.major_buttons>a:active {
 	background:#0086bb;
 	-webkit-box-shadow:inset 0 -3px 0 0 #1c92bf;

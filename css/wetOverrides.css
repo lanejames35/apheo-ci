@@ -2242,7 +2242,6 @@ select[multiple].input-lg,
   padding: 6px 12px;
   font-size: 16px;
   line-height: 1.4375;
-  border-radius: 4px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2252,7 +2251,7 @@ select[multiple].input-lg,
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
   .bttn:hover, .bttn:focus, .bttn.focus {
-    color: #335075;
+    color: #fff;
     text-decoration: none; }
   .bttn:active, .bttn.active {
     outline: 0;
@@ -2269,12 +2268,13 @@ select[multiple].input-lg,
     box-shadow: none; }
 
 .bttn-default {
-  color: #335075;
-  background-color: #eaebed;
-  border-color: #dcdee1; }
+  color: #fff;
+  background-color: #92a1b0;
+  border-color: #dcdee1;
+  border-bottom: 4px solid #bbbfc5; }
   .bttn-default:hover, .bttn-default:focus, .bttn-default.focus, .bttn-default:active, .bttn-default.active,
   .open > .bttn-default.dropdown-toggle {
-    color: #335075;
+    color: #fff;
     background-color: #cfd1d5;
     border-color: #bbbfc5; }
   .bttn-default:active, .bttn-default.active,
@@ -2287,21 +2287,22 @@ select[multiple].input-lg,
   fieldset[disabled] .bttn-default.focus,
   fieldset[disabled] .bttn-default:active,
   fieldset[disabled] .bttn-default.active {
-    background-color: #eaebed;
+    background-color: #92a1b0;
     border-color: #dcdee1; }
   .bttn-default .badge {
     color: #eaebed;
     background-color: #335075; }
 
 .bttn-primary {
-  color: #fff;
-  background-color: #2572b4;
-  border-color: #143c5f; }
+  color: #fff !important;
+  background-color: #009edc;
+  border-color: #143c5f;
+  border-bottom: 4px solid #0286ba; }
   .bttn-primary:hover, .bttn-primary:focus, .bttn-primary.focus, .bttn-primary:active, .bttn-primary.active,
   .open > .bttn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #1c578a;
-    border-color: #091c2d; }
+    color: #fff !important;
+    background-color: #008ec6;
+    border-color: #0286ba; }
   .bttn-primary:active, .bttn-primary.active,
   .open > .bttn-primary.dropdown-toggle {
     background-image: none; }
@@ -2312,7 +2313,7 @@ select[multiple].input-lg,
   fieldset[disabled] .bttn-primary.focus,
   fieldset[disabled] .bttn-primary:active,
   fieldset[disabled] .bttn-primary.active {
-    background-color: #2572b4;
+    background-color: #009edc;
     border-color: #143c5f; }
   .bttn-primary .badge {
     color: #2572b4;
@@ -3874,25 +3875,23 @@ a.thumbnail.active {
   position: relative;
   display: block;
   padding: 10px 15px;
-  margin-bottom: -1px;
-  background-color: #fff;
-  border: 1px solid #ddd; }
-  .list-group-item:first-child {
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px; }
+  margin-bottom: -1px; }
   .list-group-item:last-child {
-    margin-bottom: 0;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px; }
+    margin-bottom: 0; }
 
 a.list-group-item {
-  color: #555; }
+  margin-bottom: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff !important;
+  background-color: #92a1b0;
+  border-bottom: 2px solid #7c8996;  }
   a.list-group-item .list-group-item-heading {
     color: #333; }
   a.list-group-item:hover, a.list-group-item:focus {
     text-decoration: none;
-    color: #555;
-    background-color: #f5f5f5; }
+    color: #fff !important;
+    background-color: #cfd1d5; }
 
 .list-group-item.disabled, .list-group-item.disabled:hover, .list-group-item.disabled:focus {
   background-color: #eeeeee;
@@ -3906,7 +3905,7 @@ a.list-group-item {
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
   z-index: 2;
   color: #fff;
-  background-color: #2572b4;
+  background-color: #cfd1d5;
   border-color: #2572b4; }
   .list-group-item.active .list-group-item-heading,
   .list-group-item.active .list-group-item-heading > small,
@@ -3918,6 +3917,8 @@ a.list-group-item {
     color: inherit; }
   .list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
     color: #b5d5f0; }
+  .list-group-item:visited{
+	  color: #fff;  }
 
 .list-group-item-success {
   color: #3c763d;
@@ -5089,7 +5090,7 @@ a {
       text-decoration: none; }
 
 .bttn-default:visited {
-  color: #335075; }
+  color: #fff; }
 
 .bttn-primary:visited {
   color: #fff; }

@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <meta name="robots" content="FOLLOW,INDEX" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <title>myawesomepage</title>
+    <link href="http://www.apheo.ca/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<!--[IF IE 7]>
+    <link rel="stylesheet" type="text/css" href="./css/ie7fix.css" media="screen"/>
+    <![endif]-->
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://www.apheo.ca/min.php/js?v=1"></script>
+	<link rel="stylesheet" type="text/css" href="http://www.apheo.ca/min.php/css?v=7" media="screen" />
+	<!--[IF IE 9]>
+		<link rel="stylesheet" type="text/css" href="/css/ie8.css" media="screen"/>
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="http://www.apheo.ca/css/custom.css" media="screen" />
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="http://www.apheo.ca/core/3rdparty/iconize/png.css" charset="utf-8" />
+    <script type="text/javascript" src="http://www.apheo.ca/core/3rdparty/browsers/jquery.reject.min.js"></script>
+    <link href="http://www.apheo.ca/core/3rdparty/browsers/jquery.reject.css" rel="stylesheet" type="text/css">
+	<link href="./css/wetOverrides.css" rel="stylesheet">
+	<script type="text/javascript">
+    	// jQuery.noConflict();
+        var base = 'http://www.apheo.ca/';
+        var base_app = 'http://www.apheo.ca/';
+        var base_core = 'http://www.apheo.ca/core/';
+    </script>
+	<script type="text/javascript">
+		var lastAccodianEvent = 0;
+		$(document).ready(function() {
+		   	$('ul.sf-menu').superfish();
+			$.reject({
+				reject: {
+					// all: true
+					safari: false,
+					chrome: false,
+					firefox: false,
+					msie: 8,
+					opera: false,
+					konqueror: false,
+					unknown: true
+				},
+				display: ['chrome', 'safari', 'firefox', 'opera'],
+				imagePath: base_core + '3rdparty/browsers/images/',
+				closeCookie: true
+			});
+
+			$('.accordion .accordion_in').addClass('accordion_in ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom accordion-content-active').hide();
+			$('.accordion h6').addClass('ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons accordion-header-active ui-corner-all').click(function() {
+				$(this).toggleClass('ui-corner-all ui-state-active ui-corner-top ui-accordion-header-active');
+				$(this).next().toggleClass('ui-accordion-content-active').slideToggle();
+			});
+			/*
+		    $('.accordion').accordion({
+		    	header: "h6",
+		        collapsible: true,
+		        heightStyle: "content",
+		        active: false,
+		        beforeActivate: function(event, ui) {
+		        	var t = (new Date()).getTime();
+		        	if(t < (1000 + lastAccodianEvent))
+		        		return;
+		        	else
+		        		lastAccodianEvent = t;
+		        	// The accordion believes a panel is being opened
+			        if (ui.newHeader[0]) {
+			            var currHeader  = ui.newHeader;
+			            var currContent = currHeader.next('.ui-accordion-content');
+			         // The accordion believes a panel is being closed
+			        } else {
+			            var currHeader  = ui.oldHeader;
+			            var currContent = currHeader.next('.ui-accordion-content');
+			        }
+			         // Since we've changed the default behavior, this detects the actual status
+			        var isPanelSelected = currContent.is(':visible'); //currHeader.attr('aria-selected') == 'true';
+
+			         // Toggle the panel's header
+			        currHeader.toggleClass('ui-corner-all',isPanelSelected).toggleClass('accordion-header-active ui-state-active ui-corner-top',!isPanelSelected).attr('aria-selected', (isPanelSelected?"false":"true"));
+
+			        // Toggle the panel's icon
+			        currHeader.children('.ui-icon').toggleClass('ui-icon-triangle-1-e', isPanelSelected).toggleClass('ui-icon-triangle-1-s', !isPanelSelected);
+
+			         // Toggle the panel's content
+			        currContent.toggleClass('accordion-content-active', !isPanelSelected);
+		            if (isPanelSelected)
+		            {
+		            	currContent.slideUp();
+		            	currHeader.removeClass('ui-accordion-header-active');
+		            }
+	            	else
+	            	{
+	            		currContent.slideDown();
+		            	currHeader.addClass('ui-accordion-header-active');
+	            	}
+
+		            return false;
+		        }
+		    });
+		    */
+		});
+</script>
+<!--[if gte IE 9]>
+  <style type="text/css">.gradient {filter: none;}</style>
+<![endif]-->
+</head>
+<body>
+<!-- ====== START Header ====== -->
+
+<div class="header-area gradient">
+	<div class="header_inner">
+		<div class="top_bar">
+			<div class="page-container">
+									<ul style="width:398px;background-image:url('/images/top_bar_menu_bg3.png');">
+					<li class="tb_1" style="width:33%;"><a href="http://www.apheo.ca/contact-us">Contact Us</a></li>
+					<li class="tb_2" style="width:33%;"><a href="http://www.apheo.ca/upload/membership/document/2016-11/revised-user-guide-nov-3-2016-hyperlinks-2.pdf" target="_blank" style="padding-left:10px;background-image:url('/images/top_guide_ixo.png');">User Guide</a></li>
+					<li class="tb_2" style="width:33%;"><a href="http://www.apheo.ca/membership/account/login">Member Login</a></li>
+				</ul>
+								</div>
+		</div>
+		<div class="hdr page-container">
+			<div class="logo_box"><a href="http://www.apheo.ca/">&nbsp;</a></div>
+			<p>To <span>advance and promote</span> the discipline and professional practice<br>of <b>epidemiology</b> in <span>Ontario public health</span> units</p>
+		</div>
+	</div>
+</div>
+<!-- ====== END Header ====== -->
+<!-- ====== START Main ====== -->
+<div id="pageWrap" class="main_wrp   subpage  alternate-sub   " >
+	<div class="banner_outter">
+		<div class="banner_inner">
+			<div class="page-container">
+				<div class="navigation gradient">
+					<ul class="sf-menu clearfix">
+						<li id="menu">
+    <a href="http://www.apheo.ca/" target="_top">Home</a>
+    </li>
+<li id="menu">
+    <a href="http://www.apheo.ca/what-is-apheo" target="_top">About</a>
+        <ul >
+                <li>
+            <a href="http://www.apheo.ca/what-is-apheo" target="_top">What is APHEO?</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/faq-1" target="_top">FAQ</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/history-of-apheo" target="_top">History of APHEO</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/executive-committee" target="_top">Executive Committee</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/apheo-documents" target="_top">Documents</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/apheo-award-of-excellence" target="_top">Award of Excellence</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/listings/job" target="_top">Jobs</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/twitter" target="_top">Twitter @theAPHEO</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/contact-us" target="_top">Contact Us</a>
+                    </li>
+                    </ul>
+    </li>
+<li id="menu">
+    <a href="http://www.apheo.ca/membership" target="_top">Membership</a>
+        <ul id="nav-membership-menu">
+                <li>
+            <a href="http://www.apheo.ca/membership-information" target="_top">Membership Information</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/policies-disclaimers" target="_top">Policies & Disclaimers</a>
+                    </li>
+                    		    	<li><a href="http://www.apheo.ca/membership/account/login">Login</a></li>
+    	<li><a href="http://www.apheo.ca/membership/account/register">Register</a></li>
+	    	    	    </ul>
+    </li>
+<li id="menu">
+    <a href="http://www.apheo.ca/calendar" target="_top">Events</a>
+        <ul >
+                <li>
+            <a href="http://www.apheo.ca/submit-event" target="_top">Submit Calendar Event</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/2017-conference" target="_top">2017 Conference</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/2016-workshop" target="_top">2016 Workshop</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/2015-conference" target="_top">2015 Conference</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/2014-workshop" target="_top">2014 Workshop</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/2013-conference" target="_top">2013 Conference</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/past-conferences-workshops" target="_top">Past Conferences & Workshops</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/2017-general-meetings" target="_top">2017 General Meetings</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/2016-general-meetings" target="_top">2016 General Meetings</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/2015" target="_top">2015 General Meetings</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/meetings" target="_top">General Meetings Archive</a>
+                    </li>
+                    </ul>
+    </li>
+<li id="menu">
+    <a href="http://www.apheo.ca/for-users-alternative-structure" target="_top">Core Indicators</a>
+        <ul >
+                <li>
+            <a href="http://core.apheo.ca/index.php?pid=55" target="_blank">Core Indicators Table</a>
+                    </li>
+                <li>
+            <a href="http://core.apheo.ca/index.php?pid=261" target="_blank">Data Sources Table</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/the-core-indicators-project" target="_top">About Core Indicators</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/our-volunteer-workforce" target="_top">Our Volunteer Workforce</a>
+                    </li>
+                    </ul>
+    </li>
+<li id="menu">
+    <a href="http://www.apheo.ca/knowledge-base" target="_top">Knowledge Base</a>
+        <ul >
+                <li>
+            <a href="http://www.apheo.ca/orientation" target="_top">Orientation</a>
+                    </li>
+                <li>
+            <a href="http://www.apheo.ca/epidata" target="_top">EpiData Project</a>
+                    </li>
+                    </ul>
+    </li>
+
+					</ul>
+				</div>
+				<div class="banner page-title">
+									<h1>myawesomepage</h1>
+
+					<div class="clearfix" style="margin-top:-15px;">
+												<ul class="breadcrumb">
+							<li><a href="http://www.apheo.ca/">Home</a></li>
+							<li>></li>
+							<li><a href="">myawesomepage</a></li>
+						</ul>
+																	</div>
+								</div>
+			</div>
+		</div>
+	</div>
+	<div class="main-content-box page-container">
+		<div class="content clearfix">
+
+		<div class="main-content">  <!-- prev class class="main-content" -->
+
+						<div class="actual-content">
+						<div class="container">
+							<!--Core Indicators: Indicator Title-->
+							<div class="row">
+								<div class="col-6">
+									<h1>Indicator title</h1>
+								</div>
+								<div class="col-6">
+									<div class="pull-right mrgn-rght-md">
+										<!--Insert glyphicons here-->
+										<a href="javascript: window.print();" class="bttn bttn-primary">Print</a>
+										<a href="#" class="bttn bttn-primary">Download</a>
+										<a href="#" class="bttn bttn-default">Syntax</a>
+										<a href="#" class="bttn bttn-default">Appendices</a>
+									</div>
+								</div>
+							</div>
+							<!--END indicator title-->
+							<!--CI: Description-->
+							<div class="row">
+								<div class="col-7">
+									<h2>Description</h2>
+									<p>The description provides the definition of the indicator. Please delete (or overwrite) this paragraph and the following examples when drafting a new indicator</p>
+									<ul>
+										<li>The crude hospitalization rate is the total number of hospital separations (discharges, transfers and deaths) during a given year (fiscal or calendar) per total population (per 100,000).</li>
+										<li>Proportion of the population within a 5-10 minute (400m-800m) walking distance to various community focal points i.e. green space, school, neighbourhood food retailers, etc.</li>
+										<li>Proportion of the population aged 19 and over, excluding pregnant and breastfeeding women, that exceed the low-risk alchol drinking guidelines (LRADG)(1), i.e.:
+											<ul>
+												<li>Males that drank more than 15 drinks per week, femails that drank more than 10 drinks per week; OR</li>
+												<li>Males that drink more than 3 drinks per day, femails that drank more than 2 drinks per day; OR</li>
+												<li>Males or females with less than 2 non-drinking days a week; OR</li>
+												<li>Males or females that drank 5 or more drinks on any one occasion in the previous year</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="col-5">
+									<div class="list-group">
+										<span class="list-group-item h3">Related Core Indicators</span>
+										<a href="#" class="list-group-item">Chronic Disease Hospitalization</a>
+										<a href="#" class="list-group-item">Cancer Hospitalization</a>
+										<a href="#" class="list-group-item">Injury Hospitalization</a>
+										<a href="#" class="list-group-item">Child Hospitalization</a>
+										<a href="#" class="list-group-item">Chronic Disease Hospitalization</a>
+										<a href="#" class="list-group-item">Cancer Hospitalization</a>
+										<a href="#" class="list-group-item">Injury Hospitalization</a>
+										<a href="#" class="list-group-item">Child Hospitalization</a>
+									</div>
+								</div>
+							</div>
+							<!--END description-->
+							<!--Specific Indicators and Method of Calculation-->
+							<h2>Specific Indicators and Method of Calculation</h2>
+							<div class="panel panel-default">
+								<div class="panel-body list-group">
+									<div class="row list-group-item">
+										<div class="col-7">
+											<dl>
+												<dt>Number of rabies-related deaths (human)</dt>
+												<dd>Annual number of human who die of rabies infection</dd>
+											</dl>
+										</div>
+										<div class="col-5">
+											<dl>
+												<dt>Reportable Disease Data</dt>
+											</dl>
+										</div>
+									</div>
+									<div class="row list-group-item">
+										<div class="col-7">
+											<dl>
+												<dt>Confirmed cases of animal rabies</dt>
+													<dd>Annual number of animals with confirmed rabies</dd>
+											</dl>
+										</div>
+										<div class="col-5">
+											<dl>
+												<dt>Reportable Disease Data<dt>
+											</dl>
+										</div>
+									</div>
+									<div class="row list-group-item">
+											<div class="col-7">
+												<dl>
+													<dt>Proportion of human given prophylactic</dt>
+														<dd>
+															<math display="block">
+															<mrow>
+															<mstyle mathsize="120%">
+															  <mo>&#x2211;</mo>
+															  <mfrac>
+																<mrow>
+																  <mtext  mathvariant="italic">Number of people given prophylactic treatment for rabies exposure in a given time period</mtext>
+																</mrow>
+																<mrow>
+																  <mtext  mathvariant="italic">Number of exposures reported in a given time period</mtext>
+																</mrow>
+															  </mfrac>
+															  <mtext>100%</mtext>
+															</mstyle>
+															</mrow>
+															</math>
+														</dd>
+												</dl>
+											</div>
+											<div class="col-5">
+												<dl>
+													<dt>CCHS<dt>
+													<dd>Modules X and Y; derived variable A</dd>
+												</dl>
+											</div>
+										</div>
+								</div>
+							</div>		
+									</div>
+						</div>
+							<!--Basic Categories table-->
+							<div class="basic_categories ci_box">
+								<h2>Basic Categories</h2>
+									<!--Table margin to big-->
+									<!--Equalize heights with lots of lits items--> 
+									<table class="basic_categories_left bc_tbl">
+										<tbody>
+											<tr>
+												<td>Age Option I</td>
+												<td>
+													<ul class="list">
+														<li>&lt;1 - 19 years</li>
+														<li>20 - 44 years</li>
+													</ul></td>
+											</tr>
+											<tr>
+												<td>Age Option II [intelliHEALTH infant + 5-yr]</td>
+												<td>
+													<ul class="list">
+														<li>&lt;1 years</li>
+														<li>1-4 years</li>
+														<li>...5 year age groups...</li>
+														<li>90+ years</li>
+													</ul></td>
+											</tr>
+											<tr>
+												<td>Sex</td>
+												<td>
+													<ul class="list">
+														<li>Male</li>
+														<li>Female</li>
+													</ul></td>
+											</tr>
+											<tr>
+												<td>Geographic Areas of Residence</td>
+												<td>
+													<ul class="list">
+														<li>Ontario</li>
+														<li>Public health unit</li>
+														<li>Municipality</li>
+														<li>Smaller areas of geography based on aggregated postal code</li>
+													</ul></td>
+											</tr>
+										</tbody>
+									</table>
+									<table class="basic_categories_right bc_tbl">
+										<tbody>
+											<tr>
+												<td>Degree of Injury</td>
+												<td>
+													<ul class="list">
+														<li>Minimal injuries</li>
+														<li>Major injuries</li>
+														<li>Fatal injuries</li>
+													</ul></td>
+											</tr>
+											<tr>
+												<td>ICD-10 codes</td>
+												<td>
+													<p>See ICD-10 section above</p></td>
+											</tr>
+											<tr>
+												<td>Type of Animal</td>
+												<td>
+													<ul class="list">
+														<li>Dog</li>
+														<li>Cat</li>
+														<li>Raccoon</li>
+														<li>Skunk</li>
+														<li>Bat</li>
+														<li>Livestock (cows, bison, horses, sheep, goats, deer, pigs, llama, etc)</li>
+														<li>Wild animal (fox, wolf, bear, coyote )</li>
+														<li>Other</li>
+													</ul></td>
+											</tr>
+										</tbody>
+									</table></div></div><br class="no_display" />
+							<!--Basic Categories table-->
+							<div class="basic_categories ci_box">
+								<h2>Basic Categories</h2>
+								<div class="clearfix">
+									<table class="basic_categories_left bc_tbl">
+										<tbody>
+											<tr>
+												<td>Category Type</td>
+												<td>
+													<!--Remove paragraphs-->
+													<p>This section outline categories for sub-analysis</p>
+													<ul class="list">
+														<li>List</li>
+														<li>of</li>
+														<li>Subcategories</li>
+													</ul> 
+													<p>Deletes the table row when drafting an indicator.</p></td>
+											</tr>
+											<tr>
+												<td>Age Groups</td>
+												<td>
+													<ul class="list">
+														<li>&lt;1 19</li>
+														<li>20-44</li>
+														<li>45-54</li>
+														<li>65-74</li>
+														<li>75+</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td>Sex</td>
+												<td>
+													<ul class="list">
+														<li>Male</li>
+														<li>Female</li>
+													</ul></td>
+											</tr>
+											<tr>
+												<td>Geographic Areas</td>
+												<td>
+													<ul class="list">
+														<li>Public health unit</li>
+														<li>LHINs</li>
+														<li>Census Divisions</li>
+														<li>Census Sub-Divisions</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>
+													<ul class="list">
+														<li>Male</li>
+														<li>Female</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td>ICD-10 Codes</td>
+												<td>
+													<ul class="list">
+														<li>By ICD Chapter</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td>Other Categories</td>
+												<td>
+													<ul class="list">
+														<li>Add Additional Categories that are releavent to the indicator</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+						
+							<div class="data_sources ci_box">
+							<h2>Data Sources</h2>
+							<!--Remove table margin-->
+							<table class="data_sources_box clearfix">
+								<tbody>
+									<tr>
+										<td>Numerator</td>
+										<td>Denominator</td>
+										<td>Alternative Data source</td>
+									</tr>
+									<tr>
+										<td>
+											<h6>Additional Header Goes Here</h6>
+											<div class="ds_row">
+												<p><span class="bold">Original Source:</span></p>
+												<p>Statistics Canada</p></div>
+											<div class="ds_row">
+												<p><span class="bold">Distributed by:</span></p>
+												<p>1. Ontario Ministry of Health and Long-Term Care (MOHLTC)</p>
+												<p>2. Statistics Canada</p></div>
+											<div class="ds_row">
+												<p><span class="bold">Suggested Citation</span> (see Data Citation Notes)</p>
+												<p>1. Canadian Community Health Survey [year], Statistics Canada, Share File, Ontario MOHLTC</p>
+												<p>2. Canadian Community Health Survey [year],</p></div></td>
+										<td>
+											<h6>Additional Header Goes Here</h6>
+											<div class="ds_row">
+												<p><span class="bold">Original Source:</span></p>
+												<p>Statistics Canada</p></div>
+											<div class="ds_row">
+												<p><span class="bold">Distributed by:</span></p>
+												<p>1. Ontario Ministry of Health and Long-Term Care (MOHLTC)</p>
+												<p>2. Statistics Canada</p></div>
+											<div class="ds_row">
+												<p><span class="bold">Suggested Citation</span> (see Data Citation Notes)</p>
+												<p>1. Canadian Community Health Survey [year], Statistics Canada, Share File, Ontario MOHLTC</p>
+												<p>2. Canadian Community Health Survey [year],</p></div></td>
+										<td>
+											<h6>Additional Header Goes Here</h6>
+											<div class="ds_row">
+												<p><span class="bold">Original Source:</span></p>
+												<p>Statistics Canada</p></div>
+											<div class="ds_row">
+												<p><span class="bold">Distributed by:</span></p>
+												<p>1. Ontario Ministry of Health and Long-Term Care (MOHLTC)</p>
+												<p>2. Statistics Canada</p></div>
+											<div class="ds_row">
+												<p><span class="bold">Suggested Citation</span> (see Data Citation Notes)</p>
+												<p>1. Canadian Community Health Survey [year], Statistics Canada, Share File, Ontario MOHLTC</p>
+												<p>2. Canadian Community Health Survey [year],</p></div></td>
+									</tr>
+								</tbody>
+							</table></div><br class="no_display" />
+						
+						<div class="data_sources_complicated ci_box">
+							<table class="ds_complicated clearfix">
+								<tbody>
+									<tr>
+										<td>
+											<div class="data_sources_ttl">Numerator</div>
+											<div class="ds_box">
+												<h6>Canadian Community Health Survey (CCHS)</h6>
+												<div class="ds_row">
+													<p><span class="bold">Original Source:</span></p>
+													<p>Statistics Canada</p></div>
+												<div class="ds_row">
+													<p><span class="bold">Distributed by:</span></p>
+													<p>1. Ontario Ministry of Health and Long-Term Care (MOHLTC)</p>
+													<p>2. Statistics Canada</p></div>
+												<div class="ds_row">
+													<p><span class="bold">Suggested Citation</span> (see Data Citation Notes)</p>
+													<p>1. Canadian Community Health Survey [year], Statistics Canada, Share File, Ontario MOHLTC</p></div></div></td>
+										<td>
+											<div class="complicated_contant_ttl">&nbsp;</div>
+											<ul class="list">
+												<li>The crude hospitalization rate is the total number of hospital separations (discharges, transfers and deaths) during a given year (fiscal or calendar) per total population (per 100,000).</li>
+												<li>Age-standardized hospitalization rate (SRATE): the number of hospital separations per the population that would occur if the population had the same age distribution as the 1991 Canadian population (per 100,000)</li>
+												<li>Standardized morbidity ratio (SMR): the ratio of observed hospital separations to the number expected if the population has the same age-specific hospitalization rates as Ontario.</li>
+											</ul></td>
+									</tr>
+								</tbody>
+							</table></div>
+						<div class="data_sources ci_box">
+							<h2>Data Sources</h2>
+							<table class="ds_complicated clearfix">
+								<tbody>
+									<tr>
+										<td>
+											<div class="data_sources_ttl">Numerator</div>
+											<div class="ds_box">
+												<h6>Canadian Community Health Survey (CCHS)</h6>
+												<div class="ds_row">
+													<p><span class="bold">Original Source:</span></p>
+													<p>Statistics Canada</p></div>
+												<div class="ds_row">
+													<p><span class="bold">Distributed by:</span></p>
+													<p>1. Ontario Ministry of Health and Long-Term Care (MOHLTC)</p>
+													<p>2. Statistics Canada</p></div>
+												<div class="ds_row">
+													<p><span class="bold">Suggested Citation</span> (see Data Citation Notes)</p>
+													<p>1. Canadian Community Health Survey [year], Statistics Canada, Share File, Ontario MOHLTC</p></div></div></td>
+										<td>
+											<div class="complicated_contant_ttl">&nbsp;</div>
+											<ul class="list">
+												<li>The crude hospitalization rate is the total number of hospital separations (discharges, transfers and deaths) during a given year (fiscal or calendar) per total population (per 100,000).</li>
+												<li>Age-standardized hospitalization rate (SRATE): the number of hospital separations per the population that would occur if the population had the same age distribution as the 1991 Canadian population (per 100,000)</li>
+												<li>Standardized morbidity ratio (SMR): the ratio of observed hospital separations to the number expected if the population has the same age-specific hospitalization rates as Ontario.</li>
+											</ul></td>
+									</tr>
+								</tbody>
+							</table></div>
+				<!-- LWLM:orphan:4856:start --><!-- LWLM:orphan:4856:end --></div>
+								<img src="http://www.apheo.ca/images/main-content-left-shadow.png" width="14" height="704" alt="" class="main-content-left-shadow">
+				<img src="http://www.apheo.ca/images/main-content-right-shadow.png" width="14" height="704" alt="" class="main-content-right-shadow">
+				<img src="http://www.apheo.ca/images/main-content-btm-shadow.png" width="997" height="22" alt="" class="main-content-btm-shadow">
+			</div>
+					</div>	</div>
+</div>
+
+
+<div class="footer-area">
+	<div class="page-container">
+		<div class="left-side">
+			<ul class="clearfix">
+				    <li><a href="http://www.apheo.ca/">Home</a></li>
+    <li><a href="http://www.apheo.ca/what-is-apheo">About</a></li>
+    <li><a href="http://www.apheo.ca/membership">Membership</a></li>
+    <li><a href="http://www.apheo.ca/calendar">Events</a></li>
+    <li><a href="http://www.apheo.ca/for-users-alternative-structure">Core Indicators</a></li>
+    <li><a href="http://www.apheo.ca/knowledge-base">Knowledge Base</a></li>
+
+			</ul>
+			<span>2011-2017 &copy; APHEO- Association of Public Health Epidemiologists in Ontario<br>Design by: <a target="_blank" href="http://www.lifelinedesign.ca/" style="float:none;display:inline-block;">LifeLine</a></span>
+		</div>
+		<div class="right-side">
+			<a href="" class="ftr_logo"></a>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+renderAdminPanel('James Lane');
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29844628-34']);
+  _gaq.push(['_setDomainName', window.location.hostname]);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+	$('#frmSearch_forum #qtext').autocomplete({
+	    minLength: 1,
+		source: function(request, response) {
+		   $.ajax({
+		       url: base_app + "forums/getforumposts",
+		       type: 'post',
+		       data: { 'term': $('#frmSearch_forum #qtext').val() },
+		       dataType: 'json',
+		       success: function(data){
+		       	    if(data.length > 0)
+		       	    {
+			       	    response($.map
+			               (data, function(obj) {
+								return {
+				                   id: obj.id,
+				                   label: obj.title,
+				                   url : obj.url
+								};
+			       		}));
+			       	}
+		       }
+		   });
+		},
+	    select: function( event, ui ) {
+	    	window.location.assign(base + ui.item.url);
+	    }
+	});
+
+	var href = window.location.href.toString();
+		$('#menu a').each(function() {
+			if(href.indexOf($(this).attr('href')) != -1)
+			{
+				$('#menu a').removeClass('active');
+				$(this).addClass('active');
+				if($(this).parents('ul').parents('li').length)
+					$(this).parents('ul').parents('li').children('a:eq(0)').addClass('active');
+			}
+		});
+</script>
+</body>
+</html>
+

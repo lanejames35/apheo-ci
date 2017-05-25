@@ -1145,6 +1145,12 @@ a.text-warning:hover {
 a.text-danger:hover {
   color: #843534; }
 
+.text-purple{
+	color: #7b77b1; }
+
+.text-aqua{
+	color: #009edc; }
+
 .bg-primary {
   color: #fff; }
 
@@ -1372,7 +1378,7 @@ pre {
   .row:after {
     clear: both; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-11, .col-12{
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
   float: left;
   position: relative;
   min-height: 1px;
@@ -2296,13 +2302,11 @@ select[multiple].input-lg,
 .bttn-primary {
   color: #fff !important;
   background-color: #009edc;
-  border-color: #143c5f;
   border-bottom: 4px solid #0286ba; }
   .bttn-primary:hover, .bttn-primary:focus, .bttn-primary.focus, .bttn-primary:active, .bttn-primary.active,
   .open > .bttn-primary.dropdown-toggle {
     color: #fff !important;
-    background-color: #008ec6;
-    border-color: #0286ba; }
+    background-color: #008ec6; }
   .bttn-primary:active, .bttn-primary.active,
   .open > .bttn-primary.dropdown-toggle {
     background-image: none; }
@@ -2313,8 +2317,7 @@ select[multiple].input-lg,
   fieldset[disabled] .bttn-primary.focus,
   fieldset[disabled] .bttn-primary:active,
   fieldset[disabled] .bttn-primary.active {
-    background-color: #009edc;
-    border-color: #143c5f; }
+    background-color: #009edc; }
   .bttn-primary .badge {
     color: #2572b4;
     background-color: #fff; }
@@ -5338,6 +5341,17 @@ blockquote {
  *	fieldset element instead ensures that all fieldsets will have a separation
  *	even when no legend is used.
  */
+ 
+ /*
+  * Euqalize heights
+  * From WET-BOEW style guide
+  */
+.wb-eqht section{
+	display: inline-block;
+	margin-bottom: 15px;
+	padding: 15px;
+	width: 100%; }
+
 legend {
   border-bottom: 0;
   float: left; }
@@ -5430,11 +5444,7 @@ fieldset {
 .pagination > .active {
   color: #fff; }
 
-/*
- *	Use button border style 'outset' to give buttons depth, except when disabled
- */
 .bttn {
-  border-style: outset;
   /*
 	 * These two property overrides should be recommended upstream to
 	 * Bootstrap as a fix for button wrapping (see wet-boew/wet-boew#4454)
@@ -6262,6 +6272,9 @@ q:before, q:after {
 
 .mrgn-rght-0 {
   margin-right: 0; }
+  
+.mrgn-rght-xs {
+  margin-right: 1px; }
 
 .mrgn-rght-sm {
   margin-right: 5px; }

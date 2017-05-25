@@ -17,9 +17,10 @@
     <link rel="stylesheet" type="text/css" href="./css/ie7fix.css" media="screen"/>
     <![endif]-->
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script type="text/javascript" src="http://www.apheo.ca/min.php/js?v=1"></script>
-	<link rel="stylesheet" type="text/css" href="http://www.apheo.ca/min.php/css?v=7" media="screen" />
+	<link rel="stylesheet" type="text/css" href="./css/apheo_main.css" media="screen" />
 	<!--[IF IE 9]>
 		<link rel="stylesheet" type="text/css" href="/css/ie8.css" media="screen"/>
 	<![endif]-->
@@ -28,7 +29,9 @@
 	<link type="text/css" rel="stylesheet" href="http://www.apheo.ca/core/3rdparty/iconize/png.css" charset="utf-8" />
     <script type="text/javascript" src="http://www.apheo.ca/core/3rdparty/browsers/jquery.reject.min.js"></script>
     <link href="http://www.apheo.ca/core/3rdparty/browsers/jquery.reject.css" rel="stylesheet" type="text/css">
+	<!--WET-BOEW EDITS-->
 	<link href="./css/wetOverrides.css" rel="stylesheet">
+	<script src="./js/jquery.matchHeight.js"></script>
 	<script type="text/javascript">
     	// jQuery.noConflict();
         var base = 'http://www.apheo.ca/';
@@ -135,7 +138,7 @@
 </div>
 <!-- ====== END Header ====== -->
 <!-- ====== START Main ====== -->
-<div id="pageWrap" class="main_wrp   subpage  alternate-sub   " >
+<div id="pageWrap" class="main_wrp subpage alternate-sub">
 	<div class="banner_outter">
 		<div class="banner_inner">
 			<div class="page-container">
@@ -276,8 +279,7 @@
 		<div class="content clearfix">
 
 		<div class="main-content">  <!-- prev class class="main-content" -->
-
-						<div class="actual-content">
+					<div class="actual-content">
 						<div class="container">
 							<!--Core Indicators: Indicator Title-->
 							<div class="row">
@@ -285,12 +287,12 @@
 									<h1>Indicator title</h1>
 								</div>
 								<div class="col-6">
-									<div class="pull-right mrgn-rght-md">
+									<div class="pull-right mrgn-rght-sm">
 										<!--Insert glyphicons here-->
-										<a href="javascript: window.print();" class="bttn bttn-primary">Print</a>
-										<a href="#" class="bttn bttn-primary">Download</a>
-										<a href="#" class="bttn bttn-primary">Syntax</a>
-										<a href="#" class="bttn bttn-primary">Appendices</a>
+										<a href="javascript: window.print();" class="bttn bttn-primary mrgn-rght-xs">Print</a>
+										<a href="#" class="bttn bttn-primary mrgn-rght-xs">Download</a>
+										<a href="#" class="bttn bttn-primary mrgn-rght-xs">Syntax</a>
+										<a href="#" class="bttn bttn-primary mrgn-rght-sm">Appendices</a>
 									</div>
 								</div>
 							</div>
@@ -315,7 +317,7 @@
 								</div>
 								<div class="col-5">
 									<div class="list-group">
-										<span class="list-group-item h3">Related Core Indicators</span>
+										<h3 class="list-group-item-heading text-center">Related Core Indicators</h3>
 										<a href="#" class="list-group-item">Chronic Disease Hospitalization</a>
 										<a href="#" class="list-group-item">Cancer Hospitalization</a>
 										<a href="#" class="list-group-item">Injury Hospitalization</a>
@@ -329,346 +331,351 @@
 							</div>
 							<!--END description-->
 							<!--Specific Indicators and Method of Calculation-->
-							<h2>Specific Indicators and Method of Calculation</h2>
-							<div class="panel panel-default">
-								<div class="panel-body list-group">
-									<div class="row list-group-item">
-										<div class="col-7">
-											<dl>
-												<dt>Number of rabies-related deaths (human)</dt>
-												<dd>Annual number of human who die of rabies infection</dd>
-											</dl>
-										</div>
-										<div class="col-5">
-											<dl>
-												<dt>Reportable Disease Data</dt>
-											</dl>
-										</div>
-									</div>
-									<div class="row list-group-item">
-										<div class="col-7">
-											<dl>
-												<dt>Confirmed cases of animal rabies</dt>
-													<dd>Annual number of animals with confirmed rabies</dd>
-											</dl>
-										</div>
-										<div class="col-5">
-											<dl>
-												<dt>Reportable Disease Data<dt>
-											</dl>
-										</div>
-									</div>
-									<div class="row list-group-item">
-											<div class="col-7">
-												<dl>
-													<dt>Proportion of human given prophylactic</dt>
-														<dd>
-															<math display="block">
-															<mrow>
-															<mstyle mathsize="120%">
-															  <mo>&#x2211;</mo>
-															  <mfrac>
-																<mrow>
-																  <mtext  mathvariant="italic">Number of people given prophylactic treatment for rabies exposure in a given time period</mtext>
-																</mrow>
-																<mrow>
-																  <mtext  mathvariant="italic">Number of exposures reported in a given time period</mtext>
-																</mrow>
-															  </mfrac>
-															  <mtext>100%</mtext>
-															</mstyle>
-															</mrow>
-															</math>
-														</dd>
-												</dl>
+							<div class="row">
+								<div class="col-12">
+									<h2>Specific Indicators and Method of Calculation</h2>
+									<div class="panel panel-default">
+										<div class="panel-body list-group">
+											<div class="row list-group-item">
+												<div class="col-7">
+													<dl>
+														<dt class="text-purple">Number of rabies-related deaths (human)</dt>
+														<dd>Annual number of human who die of rabies infection</dd>
+													</dl>
+												</div>
+												<div class="col-5">
+													<dl>
+														<dt class="text-aqua">Reportable Disease Data</dt>
+													</dl>
+												</div>
 											</div>
-											<div class="col-5">
-												<dl>
-													<dt>CCHS<dt>
-													<dd>Modules X and Y; derived variable A</dd>
-												</dl>
+											<div class="row list-group-item">
+												<div class="col-7">
+													<dl>
+														<dt class="text-purple">Confirmed cases of animal rabies</dt>
+															<dd>Annual number of animals with confirmed rabies</dd>
+													</dl>
+												</div>
+												<div class="col-5">
+													<dl>
+														<dt class="text-aqua">Reportable Disease Data<dt>
+															<dd>Here's some useful notes about this data source</dd>
+													</dl>
+												</div>
 											</div>
-										</div>
-								</div>
-							</div>		
-									</div>
-						</div>
+											<div class="row list-group-item">
+												<div class="col-7">
+													<dl>
+														<dt class="text-purple">Proportion of human given prophylactic</dt>
+															<dd>
+																<math display="block">
+																<mrow>
+																<mstyle mathsize="120%">
+																  <mo>&#x2211;</mo>
+																  <mfrac>
+																	<mrow>
+																	  <mtext  mathvariant="italic">Number of people given prophylactic treatment for rabies exposure in a given time period</mtext>
+																	</mrow>
+																	<mrow>
+																	  <mtext  mathvariant="italic">Number of exposures reported in a given time period</mtext>
+																	</mrow>
+																  </mfrac>
+																  <mtext>100%</mtext>
+																</mstyle>
+																</mrow>
+																</math>
+															</dd>
+													</dl>
+												</div>
+												<div class="col-5">
+													<dl>
+														<dt class="text-aqua">CCHS<dt>
+														<dd>Modules X and Y; derived variable A</dd>
+													</dl>
+												</div>
+											</div>
+										</div><!--/panel-body list-group-->
+									</div><!--/panel panel-default-->
+								</div><!--/col-12-->
+							</div><!--/row-->
 							<!--Basic Categories table-->
-							<div class="basic_categories ci_box">
-								<h2>Basic Categories</h2>
+							<div class="basic_categories ci_box row">
+								<div class="col-12">
 									<!--Table margin to big-->
 									<!--Equalize heights with lots of lits items--> 
-									<table class="basic_categories_left bc_tbl">
-										<tbody>
-											<tr>
-												<td>Age Option I</td>
-												<td>
-													<ul class="list">
-														<li>&lt;1 - 19 years</li>
-														<li>20 - 44 years</li>
-													</ul></td>
-											</tr>
-											<tr>
-												<td>Age Option II [intelliHEALTH infant + 5-yr]</td>
-												<td>
-													<ul class="list">
-														<li>&lt;1 years</li>
-														<li>1-4 years</li>
-														<li>...5 year age groups...</li>
-														<li>90+ years</li>
-													</ul></td>
-											</tr>
-											<tr>
-												<td>Sex</td>
-												<td>
-													<ul class="list">
-														<li>Male</li>
-														<li>Female</li>
-													</ul></td>
-											</tr>
-											<tr>
-												<td>Geographic Areas of Residence</td>
-												<td>
-													<ul class="list">
-														<li>Ontario</li>
-														<li>Public health unit</li>
-														<li>Municipality</li>
-														<li>Smaller areas of geography based on aggregated postal code</li>
-													</ul></td>
-											</tr>
-										</tbody>
-									</table>
-									<table class="basic_categories_right bc_tbl">
-										<tbody>
-											<tr>
-												<td>Degree of Injury</td>
-												<td>
-													<ul class="list">
-														<li>Minimal injuries</li>
-														<li>Major injuries</li>
-														<li>Fatal injuries</li>
-													</ul></td>
-											</tr>
-											<tr>
-												<td>ICD-10 codes</td>
-												<td>
-													<p>See ICD-10 section above</p></td>
-											</tr>
-											<tr>
-												<td>Type of Animal</td>
-												<td>
-													<ul class="list">
-														<li>Dog</li>
-														<li>Cat</li>
-														<li>Raccoon</li>
-														<li>Skunk</li>
-														<li>Bat</li>
-														<li>Livestock (cows, bison, horses, sheep, goats, deer, pigs, llama, etc)</li>
-														<li>Wild animal (fox, wolf, bear, coyote )</li>
-														<li>Other</li>
-													</ul></td>
-											</tr>
-										</tbody>
-									</table></div></div><br class="no_display" />
+									<h2>Basic Categories</h2>
+									<div class="row">
+										<div class="col-6">
+											<table class="basic_categories_left bc_tbl">
+												<tbody>
+													<tr>
+														<th>Age Option I</th>
+														<td>
+															<ul class="list">
+																<li>&lt;1 - 19 years</li>
+																<li>20 - 44 years</li>
+															</ul>
+														</td>
+													</tr>
+													<tr>
+														<th>Age Option II [intelliHEALTH infant + 5-yr]</th>
+														<td>
+															<ul class="list">
+																<li>&lt;1 years</li>
+																<li>1-4 years</li>
+																<li>...5 year age groups...</li>
+																<li>90+ years</li>
+															</ul>
+														</td>
+													</tr>
+													<tr>
+														<th>Sex</th>
+														<td>
+															<ul class="list">
+																<li>Male</li>
+																<li>Female</li>
+															</ul>
+														</td>
+													</tr>
+													<tr>
+														<th>Geographic Areas of Residence</th>
+														<td>
+															<ul class="list">
+																<li>Ontario</li>
+																<li>Public health unit</li>
+																<li>Municipality</li>
+																<li>Smaller areas of geography based on aggregated postal code</li>
+															</ul></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="col-6">
+										<table class="basic_categories_right bc_tbl">
+											<tbody>
+												<tr>
+													<th>Degree of Injury</th>
+													<td>
+														<ul class="list">
+															<li>Minimal injuries</li>
+															<li>Major injuries</li>
+															<li>Fatal injuries</li>
+														</ul></td>
+												</tr>
+												<tr>
+													<th>ICD-10 codes</th>
+													<td>
+														<p>See ICD-10 section above</p></td>
+												</tr>
+												<tr>
+													<th>Type of Animal</th>
+													<td>
+														<ul class="list">
+															<li>Dog</li>
+															<li>Cat</li>
+															<li>Raccoon</li>
+															<li>Skunk</li>
+															<li>Bat</li>
+															<li>Livestock(cows, bison, horses, sheep, goats, deer, pigs, llama, etc)</li>
+															<li>Wild animal
+																<ul>
+																	<li>Fox</li>
+																	<li>Wolf</li>
+																	<li>Bear</li>
+																	<li>Coyote</li>
+																</ul>
+															</li>
+															<li>Other</li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										</div>
+									</div><!--/row-->
+								</div><!--/col-12-->
+							</div><!--/basic_categories ci_box row-->
 							<!--Basic Categories table-->
-							<div class="basic_categories ci_box">
+							<div class="basic_categories ci_box row">
+								<div class="col-10">
 								<h2>Basic Categories</h2>
-								<div class="clearfix">
-									<table class="basic_categories_left bc_tbl">
+								<table class="basic_categories_left bc_tbl">
+									<tbody>
+										<tr>
+											<th>Category Type</th>
+											<td>
+												<!--Remove paragraphs-->
+												<p>This section outline categories for sub-analysis</p>
+												<ul class="list">
+													<li>List</li>
+													<li>of</li>
+													<li>Subcategories</li>
+												</ul> 
+												<p>Deletes the table row when drafting an indicator.</p></td>
+										</tr>
+										<tr>
+											<th>Age Groups</th>
+											<td>
+												<ul class="list">
+													<li>&lt;1 19</li>
+													<li>20-44</li>
+													<li>45-54</li>
+													<li>65-74</li>
+													<li>75+</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th>Sex</th>
+											<td>
+												<ul class="list">
+													<li>Male</li>
+													<li>Female</li>
+												</ul></td>
+										</tr>
+										<tr>
+											<th>Geographic Areas</th>
+											<td>
+												<ul class="list">
+													<li>Public health unit</li>
+													<li>LHINs</li>
+													<li>Census Divisions</li>
+													<li>Census Sub-Divisions</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th>Prophylactic treatment</th>
+											<td>
+												<ul class="list">
+													<li>Post-exposure (PEP)</li>
+													<li>Occupational</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th>ICD-10 Codes</th>
+											<td>
+												<ul class="list">
+													<li>By ICD Chapter</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th>Other Categories</th>
+											<td>
+												<ul class="list">
+													<li>Add Additional Categories that are releavent to the indicator</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								</div><!--/col-6-->
+							</div><!--//basic_categories ci_box-->
+							<div class="data_sources ci_box row">
+								<div class="col-12">
+									<h2>Data Sources</h2>
+									<!--Remove table margin-->
+									<table class="data_sources_box">
 										<tbody>
 											<tr>
-												<td>Category Type</td>
-												<td>
-													<!--Remove paragraphs-->
-													<p>This section outline categories for sub-analysis</p>
-													<ul class="list">
-														<li>List</li>
-														<li>of</li>
-														<li>Subcategories</li>
-													</ul> 
-													<p>Deletes the table row when drafting an indicator.</p></td>
+												<td>Numerator</td>
+												<td>Denominator</td>
+												<td>Alternative Data source</td>
 											</tr>
 											<tr>
-												<td>Age Groups</td>
 												<td>
-													<ul class="list">
-														<li>&lt;1 19</li>
-														<li>20-44</li>
-														<li>45-54</li>
-														<li>65-74</li>
-														<li>75+</li>
-													</ul>
+													<h6>Additional Header Goes Here</h6>
+													<div class="ds_row">
+														<p><span class="bold">Original Source:</span></p>
+														<p>Statistics Canada</p></div>
+													<div class="ds_row">
+														<p><span class="bold">Distributed by:</span></p>
+														<p>1. Ontario Ministry of Health and Long-Term Care (MOHLTC)</p>
+														<p>2. Statistics Canada</p></div>
+													<div class="ds_row">
+														<p><span class="bold">Suggested Citation</span> (see Data Citation Notes)</p>
+														<p>1. Canadian Community Health Survey [year], Statistics Canada, Share File, Ontario MOHLTC</p>
+														<p>2. Canadian Community Health Survey [year],</p></div></td>
+												<td>
+													<h6>Additional Header Goes Here</h6>
+													<div class="ds_row">
+														<p><span class="bold">Original Source:</span></p>
+														<p>Statistics Canada</p></div>
+													<div class="ds_row">
+														<p><span class="bold">Distributed by:</span></p>
+														<p>1. Ontario Ministry of Health and Long-Term Care (MOHLTC)</p>
+														<p>2. Statistics Canada</p></div>
+													<div class="ds_row">
+														<p><span class="bold">Suggested Citation</span> (see Data Citation Notes)</p>
+														<p>1. Canadian Community Health Survey [year], Statistics Canada, Share File, Ontario MOHLTC</p>
+														<p>2. Canadian Community Health Survey [year],</p></div></td>
+												<td>
+													<h6>Additional Header Goes Here</h6>
+													<div class="ds_row">
+														<p><span class="bold">Original Source:</span></p>
+														<p>Statistics Canada</p></div>
+													<div class="ds_row">
+														<p><span class="bold">Distributed by:</span></p>
+														<p>1. Ontario Ministry of Health and Long-Term Care (MOHLTC)</p>
+														<p>2. Statistics Canada</p></div>
+													<div class="ds_row">
+														<p><span class="bold">Suggested Citation</span> (see Data Citation Notes)</p>
+														<p>1. Canadian Community Health Survey [year], Statistics Canada, Share File, Ontario MOHLTC</p>
+														<p>2. Canadian Community Health Survey [year],</p></div></td>
+											</tr>
+										</tbody>
+									</table>
+								</div><!--col-12-->
+							</div><!--/data_sources ci_box row-->
+							<div class="data_sources_complicated ci_box row">
+								<div class="col-12">
+									<h2>Data Sources</h2>
+									<table class="ds_complicated">
+										<tbody>
+											<tr>
+												<td>
+													<div class="data_sources_ttl">Numerator</div>
+													<div class="ds_box">
+														<h6>Canadian Community Health Survey (CCHS)</h6>
+														<div class="ds_row">
+															<p><span class="bold">Original Source:</span></p>
+															<p>Statistics Canada</p></div>
+														<div class="ds_row">
+															<p><span class="bold">Distributed by:</span></p>
+															<p>1. Ontario Ministry of Health and Long-Term Care (MOHLTC)</p>
+															<p>2. Statistics Canada</p></div>
+														<div class="ds_row">
+															<p><span class="bold">Suggested Citation</span> (see Data Citation Notes)</p>
+															<p>1. Canadian Community Health Survey [year], Statistics Canada, Share File, Ontario MOHLTC</p>
+														</div>
+													</div>
 												</td>
-											</tr>
-											<tr>
-												<td>Sex</td>
 												<td>
+													<div class="complicated_contant_ttl"></div>
 													<ul class="list">
-														<li>Male</li>
-														<li>Female</li>
-													</ul></td>
-											</tr>
-											<tr>
-												<td>Geographic Areas</td>
-												<td>
-													<ul class="list">
-														<li>Public health unit</li>
-														<li>LHINs</li>
-														<li>Census Divisions</li>
-														<li>Census Sub-Divisions</li>
-													</ul>
-												</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>
-													<ul class="list">
-														<li>Male</li>
-														<li>Female</li>
-													</ul>
-												</td>
-											</tr>
-											<tr>
-												<td>ICD-10 Codes</td>
-												<td>
-													<ul class="list">
-														<li>By ICD Chapter</li>
-													</ul>
-												</td>
-											</tr>
-											<tr>
-												<td>Other Categories</td>
-												<td>
-													<ul class="list">
-														<li>Add Additional Categories that are releavent to the indicator</li>
+														<li>The crude hospitalization rate is the total number of hospital separations (discharges, transfers and deaths) during a given year (fiscal or calendar) per total population (per 100,000).</li>
+														<li>Age-standardized hospitalization rate (SRATE): the number of hospital separations per the population that would occur if the population had the same age distribution as the 1991 Canadian population (per 100,000)</li>
+														<li>Standardized morbidity ratio (SMR): the ratio of observed hospital separations to the number expected if the population has the same age-specific hospitalization rates as Ontario.</li>
 													</ul>
 												</td>
 											</tr>
 										</tbody>
 									</table>
-								</div>
+								</div><!--/col-12-->
+							</div><!--/data_sources_complicated ci_box-->
 						</div>
-						
-							<div class="data_sources ci_box">
-							<h2>Data Sources</h2>
-							<!--Remove table margin-->
-							<table class="data_sources_box clearfix">
-								<tbody>
-									<tr>
-										<td>Numerator</td>
-										<td>Denominator</td>
-										<td>Alternative Data source</td>
-									</tr>
-									<tr>
-										<td>
-											<h6>Additional Header Goes Here</h6>
-											<div class="ds_row">
-												<p><span class="bold">Original Source:</span></p>
-												<p>Statistics Canada</p></div>
-											<div class="ds_row">
-												<p><span class="bold">Distributed by:</span></p>
-												<p>1. Ontario Ministry of Health and Long-Term Care (MOHLTC)</p>
-												<p>2. Statistics Canada</p></div>
-											<div class="ds_row">
-												<p><span class="bold">Suggested Citation</span> (see Data Citation Notes)</p>
-												<p>1. Canadian Community Health Survey [year], Statistics Canada, Share File, Ontario MOHLTC</p>
-												<p>2. Canadian Community Health Survey [year],</p></div></td>
-										<td>
-											<h6>Additional Header Goes Here</h6>
-											<div class="ds_row">
-												<p><span class="bold">Original Source:</span></p>
-												<p>Statistics Canada</p></div>
-											<div class="ds_row">
-												<p><span class="bold">Distributed by:</span></p>
-												<p>1. Ontario Ministry of Health and Long-Term Care (MOHLTC)</p>
-												<p>2. Statistics Canada</p></div>
-											<div class="ds_row">
-												<p><span class="bold">Suggested Citation</span> (see Data Citation Notes)</p>
-												<p>1. Canadian Community Health Survey [year], Statistics Canada, Share File, Ontario MOHLTC</p>
-												<p>2. Canadian Community Health Survey [year],</p></div></td>
-										<td>
-											<h6>Additional Header Goes Here</h6>
-											<div class="ds_row">
-												<p><span class="bold">Original Source:</span></p>
-												<p>Statistics Canada</p></div>
-											<div class="ds_row">
-												<p><span class="bold">Distributed by:</span></p>
-												<p>1. Ontario Ministry of Health and Long-Term Care (MOHLTC)</p>
-												<p>2. Statistics Canada</p></div>
-											<div class="ds_row">
-												<p><span class="bold">Suggested Citation</span> (see Data Citation Notes)</p>
-												<p>1. Canadian Community Health Survey [year], Statistics Canada, Share File, Ontario MOHLTC</p>
-												<p>2. Canadian Community Health Survey [year],</p></div></td>
-									</tr>
-								</tbody>
-							</table></div><br class="no_display" />
-						
-						<div class="data_sources_complicated ci_box">
-							<table class="ds_complicated clearfix">
-								<tbody>
-									<tr>
-										<td>
-											<div class="data_sources_ttl">Numerator</div>
-											<div class="ds_box">
-												<h6>Canadian Community Health Survey (CCHS)</h6>
-												<div class="ds_row">
-													<p><span class="bold">Original Source:</span></p>
-													<p>Statistics Canada</p></div>
-												<div class="ds_row">
-													<p><span class="bold">Distributed by:</span></p>
-													<p>1. Ontario Ministry of Health and Long-Term Care (MOHLTC)</p>
-													<p>2. Statistics Canada</p></div>
-												<div class="ds_row">
-													<p><span class="bold">Suggested Citation</span> (see Data Citation Notes)</p>
-													<p>1. Canadian Community Health Survey [year], Statistics Canada, Share File, Ontario MOHLTC</p></div></div></td>
-										<td>
-											<div class="complicated_contant_ttl">&nbsp;</div>
-											<ul class="list">
-												<li>The crude hospitalization rate is the total number of hospital separations (discharges, transfers and deaths) during a given year (fiscal or calendar) per total population (per 100,000).</li>
-												<li>Age-standardized hospitalization rate (SRATE): the number of hospital separations per the population that would occur if the population had the same age distribution as the 1991 Canadian population (per 100,000)</li>
-												<li>Standardized morbidity ratio (SMR): the ratio of observed hospital separations to the number expected if the population has the same age-specific hospitalization rates as Ontario.</li>
-											</ul></td>
-									</tr>
-								</tbody>
-							</table></div>
-						<div class="data_sources ci_box">
-							<h2>Data Sources</h2>
-							<table class="ds_complicated clearfix">
-								<tbody>
-									<tr>
-										<td>
-											<div class="data_sources_ttl">Numerator</div>
-											<div class="ds_box">
-												<h6>Canadian Community Health Survey (CCHS)</h6>
-												<div class="ds_row">
-													<p><span class="bold">Original Source:</span></p>
-													<p>Statistics Canada</p></div>
-												<div class="ds_row">
-													<p><span class="bold">Distributed by:</span></p>
-													<p>1. Ontario Ministry of Health and Long-Term Care (MOHLTC)</p>
-													<p>2. Statistics Canada</p></div>
-												<div class="ds_row">
-													<p><span class="bold">Suggested Citation</span> (see Data Citation Notes)</p>
-													<p>1. Canadian Community Health Survey [year], Statistics Canada, Share File, Ontario MOHLTC</p></div></div></td>
-										<td>
-											<div class="complicated_contant_ttl">&nbsp;</div>
-											<ul class="list">
-												<li>The crude hospitalization rate is the total number of hospital separations (discharges, transfers and deaths) during a given year (fiscal or calendar) per total population (per 100,000).</li>
-												<li>Age-standardized hospitalization rate (SRATE): the number of hospital separations per the population that would occur if the population had the same age distribution as the 1991 Canadian population (per 100,000)</li>
-												<li>Standardized morbidity ratio (SMR): the ratio of observed hospital separations to the number expected if the population has the same age-specific hospitalization rates as Ontario.</li>
-											</ul></td>
-									</tr>
-								</tbody>
-							</table></div>
-				<!-- LWLM:orphan:4856:start --><!-- LWLM:orphan:4856:end --></div>
+					</div>
+		</div>
+				<!-- LWLM:orphan:4856:start --><!-- LWLM:orphan:4856:end -->
+		</div>
+	
 								<img src="http://www.apheo.ca/images/main-content-left-shadow.png" width="14" height="704" alt="" class="main-content-left-shadow">
 				<img src="http://www.apheo.ca/images/main-content-right-shadow.png" width="14" height="704" alt="" class="main-content-right-shadow">
 				<img src="http://www.apheo.ca/images/main-content-btm-shadow.png" width="997" height="22" alt="" class="main-content-btm-shadow">
-			</div>
-					</div>	</div>
+	</div>
 </div>
-
-
 <div class="footer-area">
 	<div class="page-container">
 		<div class="left-side">
@@ -689,9 +696,6 @@
 	</div>
 </div>
 
-<script type="text/javascript">
-renderAdminPanel('James Lane');
-</script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-29844628-34']);
@@ -745,6 +749,12 @@ renderAdminPanel('James Lane');
 					$(this).parents('ul').parents('li').children('a:eq(0)').addClass('active');
 			}
 		});
+</script>
+<!--Equalize the heights of the basic categories tables-->
+<script>
+$(function() {
+	$('.bc_tbl').matchHeight();
+});
 </script>
 </body>
 </html>
